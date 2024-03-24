@@ -1,0 +1,28 @@
+.card{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 20px;
+    margin: 25px 0;
+    border: black 1px solid;
+    border-radius: 12px;
+}
+
+.event{
+    display: flex;
+}
+
+.event-img>img{
+    width: 200px;
+    height: 170px;
+    border-radius: 9px;
+}
+
+.event-details{
+    padding-left: 20px;
+    overflow: auto;
+}
+
+.like-button>button{
+    border: 0;
+}

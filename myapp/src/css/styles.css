@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Dosis", sans-serif;
+}
+
+body{
+    width: calc(100vw - (100vw - 100%));
+}
+
+body::-webkit-scrollbar { width: 0 !important }
+
+#root{
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.base{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #00c0ff;
+    padding: 7px 50px;
+    box-shadow: 0 0 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----------------------------------------- Search Bar ---------------------------------- */
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 20px 7px;
+    border-bottom: 1px solid #b1b1b1;
+}
+
+.nav-bar>h2{
+    padding-top: 6px;
+}
+
+.nav-bar div{
+    display: flex;
+}
+
+.search-form{
+    display: flex;
+    border: gray 2px solid;
+    border-radius: 25px;
+    padding: 0 5px 0 20px;
+}
+
+.searchbar-input>input{
+    border: 0;
+    width: 300px;
+    background: none;
+    height: 100%;
+}
+
+.searchbar-input>input:focus{
+    outline:0;
+}
+
+.navbar-icon>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    color: black;
+}
+
+.navbar-icon:hover{
+    filter: opacity(0.7);
+}
+
+.navbar-icon > div > img {
+    max-width: 30px;
+}
+
+.navbar-btn, .navbar-icon>div{
+    padding-left: 20px;
+}
+
+
+/* ----------------------------------------- Home ---------------------------------- */
+
+.home>h1, .home>.home-tabs{
+    margin: 10px 60px;
+}
+
+/* ----------------------------------------- Carousel ---------------------------------- */
+
+.carousel-img>img {
+    width: 100vw;
+    height: 70vh;
+}
+
+/* ----------------------------------------- Event List ---------------------------------- */
+
+.event-list, .like-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ----------------------------------------- Liked Events ---------------------------------- */
+
+.like-list > h2{
+    font-size: 3rem;
+    color: #ff4242;
+}
+
+.message{
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    filter: opacity(0.5);
+}
+
+/* ----------------------------------------- Add Events ---------------------------------- */
+
+.addevent-base{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.event-input{
+    padding-top: 20px;
+}
+
+.event-input div{
+    width: 40vw;
+}
+
+.datetime-input > div{
+    padding: 0 10px;
+    width: 19vw;
+}
+
+.input-form{
+    padding: 10px 0;
+}

@@ -1,0 +1,35 @@
+.auth-base{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../public/images/EventGo.jpg');
+    background-size: 100vw;
+}
+
+.auth-form{
+    border: black 2px solid;
+    padding: 20px 40px;
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form > p{
+    align-self: center;
+    color: white;
+}
+
+.auth-form > p > a{
+    color: #00e5ff;
+}
+
+.auth-input{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.auth-input div{
+    width: 300px;
+}
