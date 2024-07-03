@@ -15,7 +15,7 @@ const Header = async () => {
     if (session?.userId) {
         userId = session.userId;
     }
-
+    console.log("userId: ", userId, userId.length, !userId);
     return (
         <header className="w-full border-b">
             <div className="wrapper flex items-center justify-between">
@@ -32,10 +32,7 @@ const Header = async () => {
                     <NavItems />
                 </nav>
 
-                <div className="md:hidden flex w-32 justify-end gap-3">
-                    <MobileNav userId />
-
-                    {!userId && <div className="hidden md:flex lg:flex gap-3">
+                {!userId && <div className="hidden md:flex lg:flex gap-3">
                         <Button className="rounded-full" size="lg">
                             <Link href="/login">
                                 Login
@@ -47,6 +44,9 @@ const Header = async () => {
                             </Link>
                         </Button>
                     </div>}
+
+                <div className="md:hidden flex w-32 justify-end gap-3">
+                    <MobileNav userId={userId} />
                 </div>
             </div>
         </header>

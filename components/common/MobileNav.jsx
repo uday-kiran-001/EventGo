@@ -24,13 +24,15 @@ const MobileNav = ({userId}) => {
         <SheetContent className="flex flex-col gap-6 bg-white md:hidden">
             <Image src="/assets/images/logo192.png" width={40} height={40} />
             <Separator className="border border-gray-200"/>
-            {!userId && <li className={`p-medium-16 whitespace-nowrap`}>
+            {!userId && <>
+              <li className={`p-medium-16 whitespace-nowrap`}>
                 <Link href="/login">Login</Link>
-            </li>}
+              </li>
+              <li className={`p-medium-16 whitespace-nowrap`}>
+                  <Link href="/signup">Signup</Link>
+              </li>
+            </>}
             <NavItems />
-            {!userId && <li className={`p-medium-16 whitespace-nowrap`}>
-                <Link href="/signup">Signup</Link>
-            </li>}
         </SheetContent>
         </Sheet>
 
